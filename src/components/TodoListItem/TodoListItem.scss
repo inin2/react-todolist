@@ -1,0 +1,65 @@
+@import "../../config/variables.scss";
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 1px solid $black;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+
+  span {
+    display: inline-block;
+    width: 340px;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  button {
+    display: none;
+    margin-left: 10px;
+    color: $gray;
+    font-size: 18px;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.todo-item:hover {
+  span {
+    color: $gray;
+    text-decoration: line-through;
+  }
+
+  button {
+    display: block;
+  }
+}
+
+.todo-item.finish {
+  &::before {
+    background-color: $purple;
+  }
+
+  span {
+    color: $gray;
+    text-decoration: line-through;
+  }
+}

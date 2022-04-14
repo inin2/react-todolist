@@ -1,0 +1,23 @@
+@import "../../config/variables.scss";
+
+.todo-list-box {
+  flex: 1;
+  margin-top: 30px;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $gray;
+    border-radius: 10px;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar {
+      display: block;
+    }
+  }
+}
