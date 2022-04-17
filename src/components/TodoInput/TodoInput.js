@@ -16,6 +16,7 @@ const TodoInput = ({ todos, setTodos }) => {
     const AddTodoList = todos.concat({
       id: todoId,
       text,
+      finish: false,
     });
     setTodos(AddTodoList);
     setText("");

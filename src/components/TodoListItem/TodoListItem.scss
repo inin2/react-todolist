@@ -5,7 +5,7 @@
   justify-content: space-between;
   position: relative;
   margin-bottom: 30px;
-  padding-left: 40px;
+  // padding-left: 40px;
   cursor: pointer;
 
   &::before {
@@ -24,6 +24,7 @@
   span {
     display: inline-block;
     width: 340px;
+    padding-left: 40px;
     font-size: 18px;
     overflow: hidden;
     white-space: nowrap;
@@ -45,7 +46,6 @@
 .todo-item:hover {
   span {
     color: $gray;
-    text-decoration: line-through;
   }
 
   button {
