@@ -5,7 +5,6 @@
   justify-content: space-between;
   position: relative;
   margin-bottom: 30px;
-  // padding-left: 40px;
   cursor: pointer;
 
   &::before {
@@ -23,12 +22,19 @@
 
   span {
     display: inline-block;
-    width: 340px;
+    width: 360px;
     padding-left: 40px;
     font-size: 18px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+
+  input {
+    width: 320px;
+    margin-left: 40px;
+    font-size: 18px;
+    border-bottom: 1px solid $black;
   }
 
   button {

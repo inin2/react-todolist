@@ -13,6 +13,10 @@ const TodoInput = ({ todos, setTodos }) => {
 
   const onSubmitInput = (e) => {
     e.preventDefault();
+    if (text === "") {
+      return;
+    }
+
     const AddTodoList = todos.concat({
       id: todoId,
       text,
